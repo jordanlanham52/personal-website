@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordan Lanham — Ethical Hacker</title>
+  <meta name="description" content="Jordan Lanham — Ethical Hacker. Offensive security, penetration testing, and security consulting.">
+  <meta property="og:title" content="Jordan Lanham — Ethical Hacker">
+  <meta property="og:description" content="Offensive security, penetration testing, and security consulting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.jordanlanham.com/">
+  <meta property="og:image" content="https://www.jordanlanham.com/assets/preview.png">
+  <link rel="icon" href="assets/spade.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/spade.svg" alt="" class="logo">
+    <div class="brand-text">
+      <h1>Jordan Lanham</h1>
+      <p>Ethical Hacker</p>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#writeups">Write‑ups</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <h2>Ace of Spades. <span class="glow">Offense‑first</span> security.</h2>
+      <p>I help teams find and fix the vulnerabilities before attackers do — red teaming, pentesting, and secure design.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Book a test</a>
+        <a class="btn" href="assets/JordanLanham.vcf" download>Download vCard</a>
+        <a class="btn" href="#qr">Scan QR</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <!-- Ace of Spades card motif -->
+      <div class="card">
+        <div class="card-corner">A ♠</div>
+        <div class="spade">
+          <!-- QR placeholder; swap src with your own PNG/SVG QR later -->
+          <img id="qr" src="assets/qr-placeholder.svg" alt="QR code to jordanlanham.com">
+        </div>
+        <div class="card-corner invert">A ♠</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About</h3>
+    <p>I’m Jordan Lanham, an <strong>Ethical Hacker</strong> focused on offensive security: web app / API assessments, cloud posture, and adversary emulation. 
+    I pair deep technical testing with clear, prioritized remediation guidance.</p>
+    <ul class="badges">
+      <li>🕵️ Red Team</li>
+      <li>🛡️ Pentesting</li>
+      <li>☁️ Cloud &amp; Containers</li>
+      <li>🔐 Threat Modeling</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h3>Highlighted Projects</h3>
+    <div class="grid">
+      <article class="card2">
+        <h4>CTF Toolkit</h4>
+        <p>Lightweight scripts for enumeration, wordlists, and web exploitation.</p>
+        <a class="link" href="#" aria-disabled="true">GitHub (add link)</a>
+      </article>
+      <article class="card2">
+        <h4>Recon Pipeline</h4>
+        <p>Automated subdomain discovery and service fingerprinting with reporting.</p>
+        <a class="link" href="#" aria-disabled="true">GitHub (add link)</a>
+      </article>
+      <article class="card2">
+        <h4>Blue Team Sim</h4>
+        <p>Adversary emulation lab with ATT&amp;CK‑mapped procedures.</p>
+        <a class="link" href="#" aria-disabled="true">Docs (add link)</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="writeups" class="section">
+    <h3>Write‑ups</h3>
+    <div class="timeline">
+      <div class="entry">
+        <time>2025</time>
+        <a href="#" aria-disabled="true">Cloud misconfig → PrivEsc (coming soon)</a>
+      </div>
+      <div class="entry">
+        <time>2024</time>
+        <a href="#" aria-disabled="true">CTF: SQLi → RCE (notes)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <div class="contact-grid">
+      <div>
+        <p><strong>Phone:</strong> <a href="tel:+15206759537">(520) 675‑9537</a></p>
+        <p><strong>Website:</strong> <a href="https://www.jordanlanham.com">www.jordanlanham.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contact@jordanlanham.com">contact@jordanlanham.com</a> <!-- change if needed --></p>
+        <p class="note">Prefer PGP? <a href="assets/pgp.txt">Public key</a></p>
+        <div class="socials">
+          <a href="#" aria-disabled="true">GitHub</a>
+          <a href="#" aria-disabled="true">LinkedIn</a>
+          <a href="#" aria-disabled="true">Twitter/X</a>
+        </div>
+      </div>
+      <form id="contactForm" class="form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button class="btn primary" type="submit">Send securely</button>
+        <p class="tiny">This uses Formspree. Replace the action URL with your endpoint of choice.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jordan Lanham — Ethical Hacker</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
