@@ -1,1 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Jordan Lanham</title>
+  <meta name="description" content="Projects by Jordan Lanham — tooling, recon pipelines, and security labs.">
+  <link rel="icon" href="../assets/spade.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a href="../index.html"><img src="../assets/spade.svg" alt="logo" class="logo"></a>
+    <div class="brand-text">
+      <h1>Jordan Lanham</h1>
+      <p>Ethical Hacker</p>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="../about/index.html">About</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../writeups/index.html">Write‑ups</a>
+    <a href="../contact/index.html">Contact</a>
+    <button id="themeToggle" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <h2>Selected Projects — <span class="glow">Tools & Labs</span></h2>
+      <p>Small, pragmatic tooling and labs I use during engagements and CTFs — built to be lean, auditable, and easily reusable.</p>
+      <div class="cta">
+        <a class="btn primary" href="../about/index.html">About</a>
+        <a class="btn" href="../assets/JordanLanham.vcf" download>Download vCard</a>
+        <a class="btn" href="../assets/pgp.txt">PGP key</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="card">
+        <div class="card-corner">A ♠</div>
+        <div class="spade">
+          <img src="../assets/spade.svg" alt="Ace of Spades motif">
+        </div>
+        <div class="card-corner invert">A ♠</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Featured</h3>
+    <div class="grid">
+      <article class="card2">
+        <h4>CTF Toolkit</h4>
+        <p>Collection of small scripts for enumeration, exploitation helpers, and wordlists — handy during time‑boxed challenges.</p>
+        <a class="link" href="https://github.com/jordanlanham52/pentesting-ctf-scripts" aria-disabled="true">GitHub</a>
+      </article>
+
+      <article class="card2">
+        <h4>Recon Pipeline</h4>
+        <p>Automated subdomain discovery and service fingerprinting pipeline with reporting and prioritization helpers.</p>
+        <a class="link" href="#" aria-disabled="true">Docs (coming)</a>
+      </article>
+
+      <article class="card2">
+        <h4>Blue Team Sim</h4>
+        <p>Adversary emulation lab and scenarios mapped to ATT&amp;CK for testing detection and response.</p>
+        <a class="link" href="#" aria-disabled="true">Docs (coming)</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Utilities & Scripts</h3>
+    <div class="grid">
+      <article class="card2">
+        <h4>Payload Builder</h4>
+        <p>Small helpers to template payloads and safely test input sanitization.</p>
+      </article>
+      <article class="card2">
+        <h4>Report Templates</h4>
+        <p>Minimal templates to accelerate concise, high‑value findings in engagements.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Contribute</h3>
+    <p>If you'd like to collaborate or reuse these tools, check the GitHub links or open an issue/PR on the repository. I'm happy to accept improvements or make small forks for specific workflows.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jordan Lanham — Ethical Hacker</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
 

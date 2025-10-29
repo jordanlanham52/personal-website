@@ -1,1 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Write‑ups — Jordan Lanham</title>
+  <meta name="description" content="Security write‑ups and notes by Jordan Lanham — CTFs, penetration testing findings, and post‑engagement summaries.">
+  <link rel="icon" href="../assets/spade.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a href="../index.html"><img src="../assets/spade.svg" alt="logo" class="logo"></a>
+    <div class="brand-text">
+      <h1>Jordan Lanham</h1>
+      <p>Ethical Hacker</p>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="../about/index.html">About</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../writeups/index.html">Write‑ups</a>
+    <a href="../contact/index.html">Contact</a>
+    <button id="themeToggle" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <h2>Write‑ups — <span class="glow">Notes & Postmortems</span></h2>
+      <p>Short technical write‑ups from CTFs, engagement notes, and observations. Each entry focuses on the exploit path and practical mitigations.</p>
+      <div class="cta">
+        <a class="btn primary" href="../projects/index.html">Projects</a>
+        <a class="btn" href="../assets/pgp.txt">PGP key</a>
+        <a class="btn" href="../assets/JordanLanham.vcf" download>vCard</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="card">
+        <div class="card-corner">A ♠</div>
+        <div class="spade">
+          <img src="../assets/spade.svg" alt="Ace of Spades motif">
+        </div>
+        <div class="card-corner invert">A ♠</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>All write‑ups</h3>
+    <div class="timeline">
+      <div class="entry">
+        <time>2025</time>
+        <a href="#" aria-disabled="true">Cloud misconfiguration → PrivEsc (walkthrough)</a>
+      </div>
+      <div class="entry">
+        <time>2024</time>
+        <a href="#" aria-disabled="true">CTF: SQLi → RCE (notes)</a>
+      </div>
+      <div class="entry">
+        <time>2023</time>
+        <a href="#" aria-disabled="true">Container escape experiment — lessons learned</a>
+      </div>
+      <div class="entry">
+        <time>2022</time>
+        <a href="#" aria-disabled="true">Recon automation for faster triage</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Writing philosophy</h3>
+    <p>I aim for concise, reproducible write‑ups focused on the exploit path, clear mitigations, and detection suggestions. If you'd like a deeper breakdown or a private report, reach out on the contact page.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jordan Lanham — Ethical Hacker</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
 

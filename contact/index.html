@@ -1,1 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Jordan Lanham</title>
+  <meta name="description" content="Contact Jordan Lanham for red teaming, pentesting, and security consulting.">
+  <link rel="icon" href="../assets/spade.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a href="../index.html"><img src="../assets/spade.svg" alt="logo" class="logo"></a>
+    <div class="brand-text">
+      <h1>Jordan Lanham</h1>
+      <p>Ethical Hacker</p>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="../about/index.html">About</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../writeups/index.html">Write‑ups</a>
+    <a href="../contact/index.html">Contact</a>
+    <button id="themeToggle" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <h2>Contact — <span class="glow">Securely &amp; Direct</span></h2>
+      <p>If you have a security request, engagement inquiry, or a sensitive message, use the form below. For sensitive data, prefer PGP-encrypted messages (public key linked).</p>
+      <div class="cta">
+        <a class="btn primary" href="#form">Send a message</a>
+        <a class="btn" href="../assets/JordanLanham.vcf" download>Download vCard</a>
+        <a class="btn" href="../assets/pgp.txt">PGP key</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="card">
+        <div class="card-corner">A ♠</div>
+        <div class="spade">
+          <img src="../assets/spade.svg" alt="Ace of Spades motif">
+        </div>
+        <div class="card-corner invert">A ♠</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Get in touch</h3>
+    <div class="contact-grid">
+      <div>
+        <p><strong>Phone:</strong> <a href="tel:+15206759537">(520) 675‑9537</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contact@jordanlanham.com">contact@jordanlanham.com</a></p>
+        <p><strong>PGP:</strong> <a href="../assets/pgp.txt">Public key</a></p>
+        <p class="note">Prefer encrypted mail? Use the PGP key above and indicate which engagement you're contacting about.</p>
+        <div class="socials">
+          <a href="https://github.com/jordanlanham52" aria-disabled="true">GitHub</a>
+          <a href="https://www.linkedin.com/in/jordan-lanham-78b792310/" aria-disabled="true">LinkedIn</a>
+        </div>
+      </div>
+
+      <form id="form" class="form" action="https://formspree.io/f/" method="POST">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Subject <input name="subject"></label>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+        <label>Attach public key (paste) <textarea name="pgp" rows="4" placeholder="Optional: paste a short public key fingerprint or note"></textarea></label>
+        <button class="btn primary" type="submit">Send securely</button>
+        <p class="tiny">This form is proxied through Formspree — for sensitive data prefer encrypted email.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jordan Lanham — Ethical Hacker</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
 
