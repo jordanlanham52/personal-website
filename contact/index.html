@@ -64,14 +64,14 @@
         </div>
       </div>
 
-      <form id="form" class="form" action="https://formspree.io/f/" method="POST">
+      <form id="form" class="form" onsubmit="mailtoSubmit(event)">
         <label>Name <input name="name" required></label>
         <label>Email <input name="email" type="email" required></label>
         <label>Subject <input name="subject"></label>
         <label>Message <textarea name="message" rows="6" required></textarea></label>
         <label>Attach public key (paste) <textarea name="pgp" rows="4" placeholder="Optional: paste a short public key fingerprint or note"></textarea></label>
-        <button class="btn primary" type="submit">Send securely</button>
-        <p class="tiny">This form is proxied through Formspree — for sensitive data prefer encrypted email.</p>
+        <button class="btn primary" type="submit">Send (opens email)</button>
+        <p class="tiny">This will open your email client to send a message to <strong>contact@jordanlanham.com</strong>. For sensitive data prefer PGP.</p>
       </form>
     </div>
   </section>

@@ -117,12 +117,12 @@
           <a href="https://www.linkedin.com/in/jordan-lanham-78b792310/" aria-disabled="true">LinkedIn</a>
         </div>
       </div>
-      <form id="contactForm" class="form" action="https://formspree.io/f/" method="POST">
+      <form id="contactForm" class="form" onsubmit="mailtoSubmit(event)">
         <label>Name <input name="name" required></label>
         <label>Email <input name="email" type="email" required></label>
         <label>Message <textarea name="message" rows="4" required></textarea></label>
-        <button class="btn primary" type="submit">Send securely</button>
-        <p class="tiny">
+        <button class="btn primary" type="submit">Send (opens email)</button>
+        <p class="tiny">This will open your email client to send a message to <strong>contact@jordanlanham.com</strong>. For sensitive data prefer PGP.</p>
       </form>
     </div>
   </section>
