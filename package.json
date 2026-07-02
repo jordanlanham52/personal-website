@@ -1,0 +1,13 @@
+{
+  "name": "jordanlanham-site",
+  "version": "1.0.0",
+  "description": "jordanlanham.com — static site with a markdown-to-HTML build for write-ups",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-writeups.js",
+    "build:writeups": "node scripts/build-writeups.js"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  }
+}

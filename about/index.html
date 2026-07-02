@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Jordan Lanham</title>
+  <meta name="description" content="About Jordan Lanham — a security researcher specializing in reverse engineering and web application security.">
+  <link rel="canonical" href="https://jordanlanham.com/about/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">JL</span><span class="brand-text">Jordan Lanham</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="/about/" class="current" aria-current="page">About</a>
+    <a href="/ctf/">CTF write-ups</a>
+    <a href="/disclosures/">Disclosures</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+</header>
+
+<main id="main" class="page">
+  <header class="page-head">
+    <p class="kicker">About</p>
+    <h1>Reverse engineering &amp; web security research.</h1>
+  </header>
+
+  <div class="prose">
+    <p>
+      I'm a security researcher focused on two disciplines that reinforce each other:
+      <strong>reverse engineering</strong> and <strong>web application security</strong>.
+      The RE work is about taking software apart — static and dynamic analysis of binaries
+      and closed systems — to recover behavior, map attack surface, and understand precisely
+      how something breaks. The web work applies that same mindset to modern applications and
+      APIs, hunting authentication, access-control, business-logic, and injection flaws.
+    </p>
+    <p>
+      Whether a finding comes from a research target or a bug-bounty program, I handle it
+      through <strong>coordinated disclosure</strong>: reproduce it reliably, quantify the
+      real-world impact, and give the affected team the context they need to ship a durable
+      fix — not just a patch. Write-ups get published here once issues are resolved and
+      cleared for public release.
+    </p>
+  </div>
+
+  <section class="subsection">
+    <h2>Focus areas</h2>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Reverse engineering</h3>
+        <p>Static and dynamic binary analysis, unpacking, and recovering undocumented behavior to map attack surface.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Web &amp; application security</h3>
+        <p>Assessing web apps and APIs for auth, access-control, logic, and injection vulnerabilities.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Vulnerability research</h3>
+        <p>Discovering, reproducing, and weaponizing bugs into reliable proof-of-concept exploits.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Coordinated disclosure</h3>
+        <p>Working with vendors and bug-bounty programs to get issues fixed and safely published.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <h2>Elsewhere</h2>
+    <p class="section-intro">
+      <a href="https://github.com/jordanlanham52" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/jordan-lanham-78b792310/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="/contact/">Contact</a>
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Jordan Lanham</p>
+  <p class="footer-note">Security Researcher · Reverse Engineering &amp; Web Security</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
